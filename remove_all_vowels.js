@@ -1,6 +1,7 @@
 // buat function yang mereturn string yang tidak memiliki huruf vowel (a, i, u, e, o);
 
 function removeVowels(str) {
+	if(str === )
 	// expecto patronum!
 }
 

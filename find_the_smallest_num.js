@@ -1,6 +1,8 @@
 // buat sebuah function yang me-return angka paling kecil dari sebuah array of numbers;
 
-
+function findSmallestNum(numArray){
+    console.log(Math.min.apply(null , numArray))
+}
 
 
 findSmallestNum([34, 15, 88, 2]) // 2
