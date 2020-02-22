@@ -38,12 +38,20 @@
 // console.log(numberToBinary)// output: 1001
 
 function countTheGap(num){
-    var angkabiner = num.toString(2)
-    // for(let i=0;i <= angkabiner;i++)
-        
-        
-    // }
-    console.log(angkabiner)
+    let angkabiner = num.toString(2)
+    let gap = 0
+    let longestgap = 0
+    for(i=0;i < angkabiner.length;i++){
+        if(angkabiner[i] === '0'){
+            gap += 1
+        } else {
+            if(gap > longestgap){
+                longestgap = gap
+            }
+            gap = 0
+        }
+    }  
+    return longestgap      
 }
 
 console.log(countTheGap(9)) // Output: 2

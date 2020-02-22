@@ -5,7 +5,11 @@ function showKabisat(awal,akhir) {
   for( let i=awal;i <= akhir;i++) {
     if(i % 4 === 0){
       console.log("kabisat")
-    } else{
+    }
+    else if(i % 100 === 0){
+      console.log("kabisat")
+    }
+     else{
       console.log("bukan kabisat")
     }
   }
@@ -13,5 +17,5 @@ function showKabisat(awal,akhir) {
   // serta algoritma untuk menentukan tahun kabisatya.
 }
 
-showKabisat(2010,2020)
+showKabisat(2016,2020)
 
